@@ -1,0 +1,16 @@
+# Object files
+*.o
+
+# Executables
+a.out
+*.out
+*.exe
+
+# Library files
+libft.a
+
+# Backup and temp files
+*~
+
+# Testing outputs (optional)
+tests/output.txt
