@@ -12,5 +12,5 @@
 
 int	isascii(int c)
 {
-	return ((c > -1 && c < 257) || (c > -129 && c < 128));
+	return ((c > -1 && c < 256) || (c > -129 && c < 128));
 }
