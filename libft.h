@@ -6,7 +6,7 @@
 /*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 13:55:31 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/22 20:42:38 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/23 21:26:24 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ char	*ft_itoa_base(int n, const char *base);
 int		ft_atoi_base(const char *str, const char *base);
 
 /* String utilities */
-char	*ft_strrev(char *str);
+/* char	*ft_strrev(char *str); */
 char	*ft_strndup(const char *s, size_t n);
 char	*ft_strreplace(const char *str, const char *old, const char *new_str);
 char	*ft_strjoin_free(char *s1, char *s2, int free_flag);
@@ -124,7 +124,7 @@ void	ft_swap(int *a, int *b);
 
 /* Copy / Concatenate / Size-safe string functions */
 char	*ft_strcpy(char *dst, const char *src);
-char	*ft_strncpy(char *dst, const char *src, size_t dsize);
+/* char	*ft_strncpy(char *dst, const char *src, size_t dsize); */
 char	*ft_strcat(char *dst, const char *src);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
