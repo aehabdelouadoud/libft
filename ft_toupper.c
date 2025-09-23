@@ -10,13 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_islowcase(int c)
+int	ft_toupper(int c)
 {
-	return (c >= 'a' && c <= 'z');
-}
-int		ft_toupper(int c)
-{
-	if (ft_islowcase(c))
+	if (c >= 'a' && c <= 'z')
 	{
 		return (c + ('x' - 'X'));
 	}
