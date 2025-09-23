@@ -6,7 +6,7 @@
 #    By: abait-el <your@email.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/22 20:55:00 by abait-el          #+#    #+#              #
-#    Updated: 2025/09/23 15:32:12 by abait-el         ###   ########.fr        #
+#    Updated: 2025/09/23 21:43:04 by abait-el         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,8 @@ GREEN		=	\e[1;32m
 YELLOW		=	\e[3;33m
 CYAN		=	\e[3;96m
 END			=	\e[0m
+
+SHELL := /bin/bash
 
 # ---------------------------------------------------------------------------- #
 #                                  Messages                                    #
@@ -61,29 +63,31 @@ C_OBJ		=	$(patsubst %.c, %.o, $(C_SRC))
 # ---------------------------------------------------------------------------- #
 
 all:		$(NAME)
-	@echo "$(OK) Mandatory part is done!"
+	@echo -e "$(OK) libft.a has been successfuly built"
 
 $(NAME):	$(OBJ)
-	$(AR) $(NAME) $(OBJ)
+	@echo -e "$(INFO) Mandatory part is being build..."
+	@$(AR) $(NAME) $(OBJ)
+	@echo -e "$(OK) Mandatory part is done!"
 
 custom:		$(C_OBJ)
 	$(AR) $(NAME) $(C_OBJ)
-	@echo "$(OK) Custom part is done!"
+	@echo -e "$(OK) Custom part is done!"
 
 bonus:		$(B_OBJ)
-	$(AR) $(NAME) $(B_OBJ)
-	@echo "$(OK) Bonus part is done!"
+	@$(AR) $(NAME) $(B_OBJ)
+	@echo -e "$(OK) Bonus part is done!"
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ) $(B_OBJ) $(C_OBJ)
-	@echo "$(INFO) Object files removed."
+	@$(RM) $(OBJ) $(B_OBJ) $(C_OBJ)
+	@echo -e "$(WARN) Object files removed."
 
 fclean:		clean
-	$(RM) $(NAME)
-	@echo "$(KO) Removed $(NAME)."
+	@$(RM) $(NAME)
+	@echo -e "$(WARN) Removed $(NAME)."
 
 re: fclean all
 
