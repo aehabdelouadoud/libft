@@ -10,16 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_isupcase(int c)
-{
-	return (c >= 'A' && c <= 'Z');
-}
-
 int	ft_tolower(int c)
 {
-	if (ft_isupcase(c))
+	if (c >= 'A' && c <= 'Z')
 	{
-		return (c - ('x' - 'X'))
+		return (c - ('x' - 'X'));
 	}
 	return (c);
 }
