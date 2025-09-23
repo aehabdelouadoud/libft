@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tolower.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 15:39:16 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/21 15:48:38 by abait-el         ###   ########.fr       */
+/*   Created: 2025/09/23 15:50:10 by abait-el          #+#    #+#             */
+/*   Updated: 2025/09/23 16:59:40 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(char c)
+static int	ft_islowcase(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - ('A' - 'a'));
-	return (c);
+	return (c >= 'a' && c <= 'z');
+}
+
+static int	ft_isupcase(int c)
+{
+	return (c >= 'A' && c <= 'Z');
+}
+
+int	ft_isalpha(int c)
+{
+	return (ft_islowcase(c) || ft_isupcase(c));
 }

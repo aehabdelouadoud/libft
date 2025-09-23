@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 18:05:45 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/21 18:05:47 by abait-el         ###   ########.fr       */
+/*   Created: 2025/09/23 17:04:15 by abait-el          #+#    #+#             */
+/*   Updated: 2025/09/23 17:07:27 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+static int	ft_islowcase(int c)
 {
-	return (c >= '0' && c <= '9');
+	return (c >= 'a' && c <= 'z');
 }
+int		ft_toupper(int c)
+{
+	if (ft_islowcase(c))
+	{
+		return (c + ('x' - 'X'));
+	}
+	return (c);
+}
+

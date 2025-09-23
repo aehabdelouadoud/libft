@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strnstr.c                                          :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 16:44:19 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/21 17:22:56 by abait-el         ###   ########.fr       */
+/*   Created: 2025/09/23 17:01:28 by abait-el          #+#    #+#             */
+/*   Updated: 2025/09/23 17:07:24 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strnstr(char *haystack, char *needle, unsigned int len)
+static int	ft_isupcase(int c)
 {
-	int	i;
-	int	j;
+	return (c >= 'A' && c <= 'Z');
+}
 
-	i = 0;
-	while (haystack[i])
+int	ft_tolower(int c)
+{
+	if (ft_isupcase(c))
 	{
-		j = 0;
-		while (*(needle + j) == *(haystack + i + j))
-			j++;
-		if (!*(needle + j))
-			return (haystack + i);
-		i++;
+		return (c - ('x' - 'X'))
 	}
-	return ((void *)0);
+	return (c);
 }

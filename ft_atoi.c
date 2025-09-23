@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcmp.c                                           :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 17:41:59 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/21 17:46:15 by abait-el         ###   ########.fr       */
+/*   Created: 2025/09/23 15:37:09 by abait-el          #+#    #+#             */
+/*   Updated: 2025/09/23 17:06:51 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
-	if (n == 0)
-		return (0);
-	while (*(unsigned char *)s1 == *(unsigned char *)s2 && n > 0)
+	int	res;
+	int	sign;
+	int	i;
+
+	i = 0;
+	sign = 1;
+	if (*(str + i) == '-')
 	{
-		s1++;
-		s2++;
-		n--;
+		i = 1;
+		sign = -1;
 	}
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	res = 0;
+	while (*(str + i))
+	{
+		res = (res * 10) + (*(str + i) - '0');
+		i++;
+	}
+	return (res * sign);
 }
