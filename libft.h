@@ -6,7 +6,7 @@
 /*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 13:55:31 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/23 21:26:24 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/23 22:05:02 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,59 +86,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
-/* ************************************************************************** */
-/*                          EXTRA / HIGH-UTILITY FUNCTIONS                    */
-/* ************************************************************************** */
-
-/* Character checks */
-int		ft_isspace(int c);
-int		ft_isupper(int c);
-int		ft_islower(int c);
-
-/* Conversion */
-char	*ft_itoa_base(int n, const char *base);
-int		ft_atoi_base(const char *str, const char *base);
-
-/* String utilities */
-/* char	*ft_strrev(char *str); */
-char	*ft_strndup(const char *s, size_t n);
-char	*ft_strreplace(const char *str, const char *old, const char *new_str);
-char	*ft_strjoin_free(char *s1, char *s2, int free_flag);
-
-/* Memory utilities */
-void	*ft_memdup(const void *src, size_t size);
-
-/* File descriptor helpers */
-void	ft_putchar(char c);
-void	ft_putstr(char *s);
-void	ft_putendl(char *s);
-void	ft_putnbr_base_fd(int n, const char *base, int fd);
-
-/* Math helpers */
-int		ft_abs(int n);
-int		ft_max(int a, int b);
-int		ft_min(int a, int b);
-int		ft_clamp(int n, int min, int max);
-void	ft_swap(int *a, int *b);
-
-/* Copy / Concatenate / Size-safe string functions */
-char	*ft_strcpy(char *dst, const char *src);
-/* char	*ft_strncpy(char *dst, const char *src, size_t dsize); */
-char	*ft_strcat(char *dst, const char *src);
-size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
-size_t	ft_strlcat(char *dst, const char *src, size_t dsize);
-char	*ft_stpcpy(char *dst, const char *src);
-char	*ft_stpncpy(char *dst, const char *src, size_t dsize);
-char	*ft_stpecpy(char *dst, char *end, const char *src);
-ssize_t	ft_strtcpy(char *dst, const char *src, size_t dsize);
-
-/* Miscellaneous helpers */
-/* find char within n bytes */
-char	*ft_strnchr(const char *s, int c, size_t n);
-/* last occurrence */
-char	*ft_strrstr(const char *haystack, const char *needle);
-/* bounded strlen */
-size_t	ft_strlen_safe(const char *s, size_t maxlen);
 
 #endif /* !LIBFT_H */
