@@ -83,11 +83,11 @@ bonus:		$(B_OBJ)
 
 clean:
 	@$(RM) $(OBJ) $(B_OBJ) $(C_OBJ)
-	@echo -e "$(WARN) Object files removed."
+	@echo -e "$(WARN) Object files has been deleted."
 
 fclean:		clean
 	@$(RM) $(NAME)
-	@echo -e "$(WARN) Removed $(NAME)."
+	@echo -e "$(WARN) $(NAME) has been deleted."
 
 re: fclean all
 

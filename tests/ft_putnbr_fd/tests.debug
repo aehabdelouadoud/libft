@@ -1,0 +1,14 @@
+cc -Wall -Wextra -Werror ft_putchar_fd_test.c -lft -L ../.. -o ft_putnbr_fd_test
+./ft_putnbr_fd_test          10 >  tests.output
+./ft_putnbr_fd_test         -10 >> tests.output
+./ft_putnbr_fd_test  2147483647 >> tests.output
+./ft_putnbr_fd_test -2147483648 >> tests.output
+diff -u tests.output tests.expected
+--- tests.output	2025-09-26 00:22:49.399704664 +0100
++++ tests.expected	2025-09-26 00:22:09.846273755 +0100
+@@ -1,4 +1,4 @@
+-10
++100
+ -10
+ 2147483647
+ -2147483648
