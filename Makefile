@@ -25,8 +25,8 @@ RM			=	rm -f
 #                                   Colors                                     #
 # ---------------------------------------------------------------------------- #
 
-RED			=	\e[1;31m
-GREEN		=	\e[1;32m
+RED			=	\e[3;31m
+GREEN		=	\e[3;32m
 YELLOW		=	\e[3;33m
 CYAN		=	\e[3;96m
 END			=	\e[0m
@@ -63,23 +63,23 @@ C_OBJ		=	$(patsubst %.c, %.o, $(C_SRC))
 # ---------------------------------------------------------------------------- #
 
 all:		$(NAME)
-	@echo -e "$(OK) libft.a has been successfuly built"
+	@echo -e "$(GREEN) libft.a has been successfuly built$(END)"
 
 $(NAME):	$(OBJ)
-	@echo -e "$(INFO) Mandatory part is being build..."
-	@$(AR) $(NAME) $(OBJ)
-	@echo -e "$(OK) Mandatory part is done!"
+	@echo -e "$(CYAN) Object files has been built, Now creating libft.a...$(END)"
+	$(AR) $(NAME) $(OBJ)
+	@echo -e "$(INFO) Mandatory part is done!"
 
 custom:		$(C_OBJ)
 	$(AR) $(NAME) $(C_OBJ)
-	@echo -e "$(OK) Custom part is done!"
+	@echo -e "$(INFO) Custom part is done!"
 
 bonus:		$(B_OBJ)
 	@$(AR) $(NAME) $(B_OBJ)
 	@echo -e "$(OK) Bonus part is done!"
 
 %.o: %.c
-	@$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	@$(RM) $(OBJ) $(B_OBJ) $(C_OBJ)

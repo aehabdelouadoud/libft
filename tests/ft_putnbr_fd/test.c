@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putchar_fd_test.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 15:37:09 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 14:31:24 by abait-el         ###   ########.fr       */
+/*   Created: 2025/09/25 20:58:48 by abait-el          #+#    #+#             */
+/*   Updated: 2025/09/25 20:58:54 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
-{
-	int	res;
-	int	sign;
-	int	i;
+#include "../../libft.h"
+#include "../../ft_putnbr_fd.c"
 
-	i = 0;
-	sign = 1;
-	if (*(str + i) == '-')
-	{
-		i = 1;
-		sign = -1;
-	}
-	res = 0;
-	while (*(str + i))
-	{
-		res = (res * 10) + (*(str + i) - '0');
-		i++;
-	}
-	return (res * sign);
+int	main(int argc, char *argv[])
+{
+	(void)argc;
+	ft_putnbr_fd(atoi(argv[1]), 1);
+	ft_putchar_fd('\n', 1);
 }

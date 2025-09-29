@@ -2,8 +2,8 @@
 #                                   Colors                                     #
 # ---------------------------------------------------------------------------- #
 
-RED			=	\e[3;31m
-GREEN		=	\e[3;32m
+RED			=	\e[1;31m
+GREEN		=	\e[1;32m
 YELLOW		=	\e[3;33m
 CYAN		=	\e[3;96m
 END			=	\e[0m
@@ -19,16 +19,12 @@ KO			=	$(RED)[KO]$(END)
 INFO		=	$(CYAN)[INFO]$(END)
 WARN		=	$(YELLOW)[WARN]$(END)
 
-NAME = ft_putnbr_fd
+tests:
+	cc -Wall -Wextra -Werror ft_putchar_fd_test.c -lft -L ../.. -o ft_putnbr_fd_test
+	./ft_putnbr_fd_test          10 >  tests.output
+	./ft_putnbr_fd_test         -10 >> tests.output
+	./ft_putnbr_fd_test  2147483647 >> tests.output
+	./ft_putnbr_fd_test -2147483648 >> tests.output
+	@diff -u tests.output tests.expected || echo -e "$(KO)"
 
-ft_putnbr_fd:
-	@cc -Wall -Wextra -Werror test.c -lft -L ../.. -o test
-	@./test          10 >  tests.output
-	@./test         -10 >> tests.output
-	@./test  2147483647 >> tests.output
-	@./test -2147483648 >> tests.output
-	@rm test
-	@diff -u tests.output tests.expected || echo -e "$(RED)KO :( $@ $(END)"
-	@echo -e "$(GREEN)OK! $@ $(END)"
-
-.PHONY: $(NAME)
+.PHONY: tests

@@ -1,6 +1,5 @@
 TODO.md
 utils.c
-libft_doxygen.h
 
 # Object files
 *.o
@@ -17,4 +16,4 @@ libft.a
 *~
 
 # Testing outputs (optional)
-tests/output.txt
+tests/*/output.txt

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static char	*ft_strncpy(char *dst, const char *src, size_t dsize)
+/* static char	*ft_strncpy(char *dst, const char *src, size_t dsize)
 {
 	size_t	i;
 
@@ -41,4 +41,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dst_buff_size)
 		return (ft_strlen(dst));
 	}
 	return (dst_initial_size + src_size);
-}
+} */

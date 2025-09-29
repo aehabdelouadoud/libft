@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 15:35:47 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/26 15:39:03 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/28 14:25:53 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	while (*s)
+	size_t	i;
+
+	i = 0;
+	while (*(s + i))
 	{
-		f(s);
-		s++;
+		f(i, s);
+		i++;
 	}
 }
