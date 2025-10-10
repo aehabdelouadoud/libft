@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 13:09:03 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 14:31:13 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:46:03 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < (n - 1))
 	{
 		if ((*(unsigned char *)s1 + i) != *((unsigned char *)s2 + i))
-			break;
+			break ;
 		i++;
 	}
 	return ((*(unsigned char *)s1 + i) - *((unsigned char *)s2 + i));

@@ -6,15 +6,13 @@
 /*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 01:46:17 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/22 01:46:29 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/10 02:30:11 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+/* char	**ft_split(char const *s, char c)
 {
-	(void)s;
-	(void)c;
 	return (NULL);
-}
+} */

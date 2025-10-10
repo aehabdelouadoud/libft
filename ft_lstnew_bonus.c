@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 12:13:55 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/27 12:16:29 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:43:47 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content);
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*lst;
 
@@ -23,6 +23,5 @@ t_list	*ft_lstnew(void *content);
 	}
 	lst->content = content;
 	lst->next = NULL;
-
 	return (lst);
 }

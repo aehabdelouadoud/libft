@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 12:16:43 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 14:33:37 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:42:46 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,5 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *(lst);
+	*(lst) = new;
 }

@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 01:47:36 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 14:39:29 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:41:40 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char *ft_strcpy(char *dst, const char *src)
+static char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t	i;
 

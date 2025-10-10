@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 15:50:29 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/26 15:58:24 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:40:35 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		if (needle[j] == '\0')
 		{
-			return (haystack + i);
+			return ((char *)haystack + i);
 		}
 		i++;
 	}
+	return (NULL);
 }

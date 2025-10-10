@@ -23,11 +23,7 @@ NAME = ft_putnbr_fd
 
 ft_putnbr_fd:
 	@cc -Wall -Wextra -Werror test.c -lft -L ../.. -o test
-	@./test          10 >  tests.output
-	@./test         -10 >> tests.output
-	@./test  2147483647 >> tests.output
-	@./test -2147483648 >> tests.output
-	@rm test
+	@./test          < tests.input >  tests.output
 	@diff -u tests.output tests.expected || echo -e "$(RED)KO :( $@ $(END)"
 	@echo -e "$(GREEN)OK! $@ $(END)"
 

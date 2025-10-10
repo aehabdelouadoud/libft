@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 23:59:53 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 13:47:00 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/09/29 23:42:07 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char *ft_strany(char const *set, char c)
+static char	*ft_strany(char const *set, char c)
 {
 	while (*set)
 	{

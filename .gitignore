@@ -1,8 +1,21 @@
-TODO.md
-utils.c
+.clang-format
+.DS_Store
+.idea
+*.log
+tmp/
+*.cache*
+*.log
+# Backup and temp files
+*~
+*.*~
+\#*
+.\#*
+\#*\#
+.\#*\#
+*.swp
 
 # Object files
-*.o
+*.[oa]
 
 # Executables
 a.out
@@ -12,8 +25,5 @@ a.out
 # Library files
 libft.a
 
-# Backup and temp files
-*~
-
-# Testing outputs (optional)
-tests/*/output.txt
+# Testing
+./tests
