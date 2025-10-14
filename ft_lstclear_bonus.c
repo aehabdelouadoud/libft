@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 21:48:10 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/29 23:42:52 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:22:22 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:22:22 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

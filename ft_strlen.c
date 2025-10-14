@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 20:08:32 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/25 20:09:19 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:18:48 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:18:48 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlen(const char *s)
 
 	len = 0;
 	while (s[len])
-	{
 		len++;
-	}
 	return (len);
 }

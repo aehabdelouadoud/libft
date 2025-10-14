@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 17:04:15 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/23 22:09:06 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:17:47 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:17:47 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
 		return (c + ('x' - 'X'));
-	}
 	return (c);
 }

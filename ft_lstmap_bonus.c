@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 22:05:10 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/29 23:43:19 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:21:53 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:21:53 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	if (!head)
 		return (NULL);
 	tmp = head;
-	while (*lst)
+	while (lst)
 	{
 		tmp = ft_lstnew(f(lst->content));
 		if (!tmp)
 		{
-			ft_lstclear(head, del);
+			ft_lstclear(&head, del);
 			return (NULL);
 		}
 		tmp = tmp->next;

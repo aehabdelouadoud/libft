@@ -3,16 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 21:57:40 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/29 23:43:06 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:22:06 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:22:06 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (*lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

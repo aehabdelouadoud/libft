@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <your@email.com>                  +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 13:55:31 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/29 16:19:17 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:17:11 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:17:11 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,9 @@ t_list	*ft_lstnew(void *content);
  * @brief Adds the node ’new’ at the beginning of the list.
  *
  * @param lst The address of a pointer to the first link of a list.
- * @param new The address of a pointer to the node to be added to the list.
+ * @param new_lst The address of a pointer to the node to be added to the list.
  */
-void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new_lst);
 /**
  * @brief Counts the number of nodes in a list.
  *
@@ -112,9 +112,9 @@ t_list	*ft_lstlast(t_list *lst);
  * @brief Adds the node ’new’ at the end of the list.
  *
  * @param lst The address of a pointer to the first link of a list.
- * @param new The address of a pointer to the node to be added to the list.
+ * @param new_lst The address of a pointer to the node to be added to the list.
  */
-void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new_lst);
 /**
  * @brief Takes as a parameter a node and frees the memory of the node’s
  * content using the function ’del’ given as a parameter and free the node.

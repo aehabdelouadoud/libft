@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 20:20:58 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/28 14:31:02 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:21:08 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:21:08 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

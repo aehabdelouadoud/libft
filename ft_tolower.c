@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abait-el <abait-el@example.com>            +#+  +:+       +#+        */
+/*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/23 17:01:28 by abait-el          #+#    #+#             */
-/*   Updated: 2025/09/23 22:09:15 by abait-el         ###   ########.fr       */
+/*   Created: 2025/10/14 22:17:56 by abait-el          #+#    #+#             */
+/*   Updated: 2025/10/14 22:17:56 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (c - ('x' - 'X'));
-	}
 	return (c);
 }
