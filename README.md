@@ -6,7 +6,7 @@ This project aims to strengthen understanding of low-level programming by recrea
 
 ---
 
-##  Branches
+##  Branches
 
 * [**main**](https://github.com/aehabdelouadoud/libft/tree/main) → Stable, production-ready version.
 * [**dev**](https://github.com/aehabdelouadoud/libft/tree/dev) → Active development branch for new features and testing.
