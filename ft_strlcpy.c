@@ -6,11 +6,11 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:19:36 by abait-el          #+#    #+#             */
-/*   Updated: 2025/10/16 21:34:10 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/17 17:29:49 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include "libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_buff_size)
 {
@@ -23,4 +23,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dst_buff_size)
 		i++;
 	}
 	dst[i] = '\0';
-} */
+	return (ft_strlen(src));
+}

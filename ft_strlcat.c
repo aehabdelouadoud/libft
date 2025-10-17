@@ -6,11 +6,11 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:19:44 by abait-el          #+#    #+#             */
-/*   Updated: 2025/10/16 21:34:17 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/17 12:44:34 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include "libft.h"
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -26,5 +26,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	dst[i] = '\0';
-	return (0);
-} */
+	return (dstlen + ft_strlen(src));
+}
