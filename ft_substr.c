@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:18:05 by abait-el          #+#    #+#             */
-/*   Updated: 2025/10/14 22:18:05 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/18 15:47:33 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*res;
 	size_t	i;
-	size_t	s_len;
+	size_t	slen;
+	char	*res;
 
 	if (!s)
 		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
+	slen = ft_strlen(s);
+	if (start >= slen)
 		return (ft_strdup(""));
-	if (len > s_len - start)
-		len = s_len - start;
+	if (len > slen - start)
+		len = slen - start;
 	res = malloc(len + 1);
 	if (!res)
 		return (NULL);

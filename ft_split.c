@@ -6,11 +6,13 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:20:24 by abait-el          #+#    #+#             */
-/*   Updated: 2025/10/14 22:20:24 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/18 14:35:48 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
+
+// TODO: Build this.
 
 /* char	**ft_split(char const *s, char c)
 {

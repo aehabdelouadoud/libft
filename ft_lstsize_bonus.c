@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 22:21:39 by abait-el          #+#    #+#             */
-/*   Updated: 2025/10/14 22:21:39 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/10/18 15:54:34 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@ int	ft_lstsize(t_list *lst)
 {
 	size_t	size;
 
-	if (!lst)
-		return (0);
-	size = 1;
-	while (lst->next)
+	size = 0;
+	while (lst)
+	{
+		lst = lst->next;
 		size++;
+	}
 	return (size);
 }
